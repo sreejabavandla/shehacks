@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paid Courses</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #111;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #000;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      padding: 50px;
+    }
+
+    .courses {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      /* Firefox */
+      -ms-overflow-style: none;
+      /* IE and Edge */
+    }
+
+    .card {
+      text-align: center;
+      padding: 30px;
+      margin: 20px;
+      background-color: #333;
+      color: #fff;
+      border-radius: 20px;
+      width: 200px;
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      border-bottom: 2px solid transparent;
+      /* Add border */
+      transition: border-bottom-color 0.3s ease;
+      /* Add transition */
+      text-decoration: none;
+      /* Remove underline */
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .card h2 {
+      margin-top: 10px;
+      font-size: 20px;
+    }
+
+    /* Add white border on hover for paid courses */
+    .card.paid:hover {
+      border-bottom-color: #fff;
+    }
+
+    .aim {
+      margin-top: 50px;
+      text-align: center;
+      animation: fadeIn 2s forwards;
+      opacity: 0;
+    }
+
+    .aim h2 {
+      font-size: 36px;
+    }
+
+    .aim p {
+      font-size: 18px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 20px 0;
+      padding-bottom: 4em;
+    }
+
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style-type: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: black;
+      text-decoration: none;
+    }
+
+    nav ul li a.btn-border,
+    nav ul li a.btn-filled {
+      border-radius: 30px;
+      padding: 10px 20px;
+      margin-left: 10px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    nav ul li a.btn-border {
+      border: 2px solid black;
+      color: black;
+    }
+
+    nav ul li a.btn-filled {
+      background-color: black;
+      color: white;
+    }
+
+    sec:hover {
+      background-color: #000;
+      color: white;
+      border: white;
+    }
+
+    nav ul li a.btn-border:hover,
+    nav ul li a.btn-filled:hover {
+      background-color: white;
+      border: black;
+      color: black;
+    }
+
+    .container1 {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .container1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div style="background-color: #ffbf00; color: black; width: 100%;" class="container1">
+      <div class="logo">
+        <img src="skillscapeyel.png" height="100em" style="padding-top: 0.5em; padding-left: 2em;">
+      </div>
+      <nav>
+        <ul style="color: #000;">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="hack1/freelancer categories.html">Courses</a></li>
+          <li><a href="medhashehacks-main/courses/course.html">Freelancers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About Us</a></li>
+          <li class="lnsn"><a href="../../login.html" class="btn-border">Login</a></li>
+          <li class="lnsn"><a href="../../signup.html" class="btn-filled sec">Signup</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <header>
+    <h1>Paid Courses</h1>
+  </header>
+  <main>
+    <div class="container">
+      <div class="courses">
+        <a href="pho.html" class="card paid">
+          <img src="./photography.jpg" alt="Photography">
+          <h2>Photography</h2>
+        </a>
+        <a href="des.html" class="card paid">
+          <img src="./design.avif" alt="Design">
+          <h2>Design</h2>
+        </a>
+        <a href="so.html" class="card paid">
+          <img src="./social media.jpeg" alt="Social Media Management">
+          <h2>Social Media Management</h2>
+        </a>
+        <a href="https://example.com/digital-marketing" class="card paid">
+          <img src="./digital.jpeg" alt="Digital Marketing">
+          <h2>Digital Marketing</h2>
+        </a>
+        <a href="https://example.com/video-editing" class="card paid">
+          <img src="./video edit.jpeg" alt="Video Editing">
+          <h2>Video Editing</h2>
+        </a>
+        <a href="https://example.com/web-design" class="card paid">
+          <img src="./web.jpeg" alt="Web Designing">
+          <h2>Web Designing</h2>
+        </a>
+        <a href="https://example.com/animation" class="card paid">
+          <img src="./animation.jpeg" alt="Animation">
+          <h2>Animation</h2>
+        </a>
+        <a href="https://example.com/copywriting" class="card paid">
+          <img src="./copywriting.jpeg" alt="Copywriting">
+          <h2>Copywriting</h2>
+        </a>
+      </div>
+      <div class="aim">
+        <h2>Our Aim</h2>
+        <p>Welcome to our freelancing platform, where empowerment knows no bounds! Not only do we provide a dynamic
+          space for freelancers to thrive, but we also offer a range of free and paid courses focused on women
+          empowerment. We believe in leveling the playing field by offering opportunities that cut through
+          male-dominated competition, particularly empowering mothers who may not have the flexibility for full-time
+          work. Whether you're seeking to kickstart a freelance career or simply looking to enhance your skills, our
+          platform is here to support you every step of the way. Best of all, it's entirely free to join, ensuring that
+          empowerment is accessible to all. Join us today and embark on a journey of growth, independence, and
+          empowerment!</p>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

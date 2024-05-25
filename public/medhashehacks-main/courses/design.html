@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .header {
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    p {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    .resources {
+      margin-top: 40px;
+    }
+
+    .resources button {
+      cursor: pointer;
+      background-color: #ffbf00; /* Yellow color */
+      border: none;
+      border-radius: 30px;
+      padding: 12px 24px;
+      margin: 10px;
+      color: #000; /* Black text color */
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+      outline: none;
+    }
+
+    .resources button:hover {
+      background-color: #cc9a00; /* Darker shade of yellow on hover */
+    }
+
+    .courses {
+      display: none;
+      margin-top: 20px;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #333;
+    }
+
+    .courses a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      margin: 5px 0;
+      transition: color 0.3s ease;
+    }
+
+    .courses a:hover {
+      color: #ffbf00; /* Yellow color on hover */
+    }
+
+    .blog {
+      margin-top: 20px;
+    }
+
+    .blog a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .blog a:hover {
+      color: #ffbf00; /* Yellow color on hover */
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Professional Design</h1>
+      <p>Unlock your potential with our premium design courses and resources.</p>
+    </div>
+    <div class="resources">
+      <button id="toggleCourses">Explore Free Design Courses</button>
+      <div class="courses" id="coursesList">
+        <a href="https://www.youtube.com/watch?v=5_FLHvq4Wwg&list=PLK1_9VA534IhRtQJYOtvN92Kb6T6vim7I" target="_blank">YouTube</a>
+        <a href="https://www.coursera.org/courses?query=free%20design" target="_blank">Coursera</a>
+        <a href="https://www.udemy.com/course/figma-ui-ux-designing-course/" target="_blank">Udemy</a>
+      </div>
+    </div>
+    <div class="blog">
+      <p>Here is a blog for tips and tricks:</p>
+      <a href="https://yesimadesigner.com/blog/" target="_blank">Visit the Design Blog</a>
+    </div>
+  </div>
+
+  <script>
+    const toggleCoursesBtn = document.getElementById("toggleCourses");
+    const coursesList = document.getElementById("coursesList");
+
+    toggleCoursesBtn.addEventListener("click", function() {
+      coursesList.style.display = coursesList.style.display === "block" ? "none" : "block";
+    });
+  </script>
+</body>
+</html>

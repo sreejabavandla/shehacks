@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Services</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        .popular-services {
+            padding: 20px;
+            background-color: black;
+            display: flex;
+
+            overflow-x: scroll;
+            /* Allow horizontal scrolling */
+            overflow-y: hidden;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            overflow: hidden;
+
+
+
+        }
+
+        .service {
+            flex: 0 0 auto;
+            margin-right: 20px;
+            position: relative;
+            scroll-snap-align: start;
+        }
+
+        .service img {
+            width: 350px;
+            height: 400px;
+            margin-bottom: 10px;
+            border-radius: 20px;
+            border: 2px solid #ccc;
+            object-fit: cover;
+        }
+
+        .service h3,
+        .service p,
+        .service .tagline {
+            margin: 0;
+            padding: 5px 10px;
+            color: white;
+            position: absolute;
+
+        }
+
+        .service h3,
+        .service p {
+            margin: 0;
+            padding: 5px 10px;
+            color: white;
+            position: absolute;
+
+            border: none !important;
+        }
+
+        .service h3 {
+            top: 0;
+            left: 0;
+            font-size: larger;
+        }
+
+        .service p {
+            bottom: 0;
+            left: 0;
+            font-size: smaller;
+        }
+
+        .service .tagline {
+            margin: 5px;
+            padding: 5px;
+            color: white;
+            position: absolute;
+
+            border: none !important;
+            font-size: smaller;
+            font-weight: normal;
+            top: 30px;
+            left: 0;
+        }
+
+        .service button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+            color: #fff;
+            border: none;
+            padding: 8px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            z-index: 1;
+            display: none;
+        }
+
+        .service button.left {
+            left: 0;
+        }
+
+        .service button.right {
+            right: 0;
+        }
+
+        .service button:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            padding-bottom: 4em;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a.btn-border,
+        nav ul li a.btn-filled {
+            border-radius: 30px;
+            padding: 10px 20px;
+            margin-left: 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        nav ul li a.btn-border {
+            border: 2px solid #fff;
+            color: #fff;
+        }
+
+        nav ul li a.btn-filled {
+            background-color: #fff;
+            color: #000;
+        }
+
+        sec:hover {
+            background-color: #000;
+            color: white;
+            border: white;
+        }
+
+        nav ul li a.btn-border:hover,
+        nav ul li a.btn-filled:hover {
+            background-color: white;
+            border: black;
+            color: black;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="skillscape1.jpeg" height="100em" style="padding-top: 0.5em;">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="hack1/freelancer categories.html">Courses</a></li>
+                    <li><a href="#">Freelancers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li class="lnsn"><a href="../login.html" class="btn-border">Login</a></li>
+                    <li class="lnsn"><a href="../signup.html" class="btn-filled sec">Signup</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <center>
+        <h1 style="background-color: #000; color: #fff; padding-bottom: 1.25em;">Popular Services</h1>
+    </center>
+    <section class="popular-services">
+        <a href="aiartists.html">
+            <div class="service">
+
+                <img src="ai-artists-2x.jpg.webp" alt="AI Artists" height="500px">
+                <h3>AI Artists</h3>
+
+                <div class="tagline">Turn your imagination into reality</div>
+            </div>
+        </a>
+
+        <a href="logodesign.html">
+            <div class="service">
+                <img src="logo-design-2x.webp" alt="Logo Design">
+                <h3>Logo Design</h3>
+
+                <div class="tagline">Make your brand stand out</div>
+            </div>
+        </a>
+        <a href="wordpress.html">
+            <div class="service">
+                <img src="wordpress-2x.webp" alt="Word Press">
+                <h3>Word Press</h3>
+
+                <div class="tagline">Give your words a voice that resonates.</div>
+            </div>
+        </a>
+
+        <div class="service">
+            <img src="voice-over-2x.webp" alt="Voice Over">
+            <h3>Voice Over</h3>
+
+            <div class="tagline">Tell your story with captivating visuals</div>
+        </div>
+
+        <div class="service">
+            <img src="animated-explainer-2x.webp" alt="Video Explainer">
+            <h3>video Explainer</h3>
+
+            <div class="tagline">Boost your online presence with engaging content</div>
+        </div>
+
+        <div class="service">
+            <img src="social-2x.webp" alt="Social Media">
+            <h3>Social Media</h3>
+
+            <div class="tagline">Bridging language barriers to connect the world</div>
+        </div>
+
+        <div class="service">
+            <img src="translation-2x.webp" alt="Translation">
+            <h3>Translation</h3>
+
+            <div class="tagline">Efficiently organize your information with precision</div>
+        </div>
+
+        <div class="service">
+            <img src="data-entry-2x.webp" alt="Data Entry">
+            <h3>Data Entry</h3>
+
+            <div class="tagline">Capture readers attention with stunning visuals</div>
+        </div>
+
+        <div class="service">
+            <img src="book-covers-2x.webp" alt="Book Covers">
+            <h3>Book Covers</h3>
+
+            <div class="tagline">Capture readers' attention with stunning visuals</div>
+        </div>
+
+    </section>
+
+    <script>
+        const scrollStep = 250; 
+        const scrollSpeed = 300;
+
+        const popularServices = document.querySelector('.popular-services');
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowLeft') {
+                popularServices.scrollBy({
+                    top: 0,
+                    left: -scrollStep,
+                    behavior: 'smooth'
+                });
+            } else if (event.key === 'ArrowRight') {
+                popularServices.scrollBy({
+                    top: 0,
+                    left: scrollStep,
+                    behavior: 'smooth'
+                });
+            }
+        });
+
+    </script>
+</body>
+
+</html>

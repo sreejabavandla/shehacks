@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Font Awesome for icons -->
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #000;
+      /* Black background */
+      color: #fff;
+      /* White text color */
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #000;
+      text-align: center;
+      padding: 20px 0;
+      color: #fff;
+      /* White text color */
+    }
+
+    h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .testimonial-heading {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .testimonial {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+      position: relative;
+      animation: fadeInUp 1s ease;
+    }
+
+    .quote-icon {
+      font-size: 40px;
+      color: #ffbf00;
+      /* Yellow color for quotation marks */
+      margin-right: 10px;
+      animation: bounce 1s infinite alternate;
+      /* Add animation to quotation marks */
+    }
+
+    .testimonial-text {
+      font-size: 18px;
+      font-style: italic;
+      padding: 20px;
+      background-color: #222;
+      /* Dark background color for testimonial box */
+      color: #fff;
+      /* White text color */
+      border-radius: 20px;
+      position: relative;
+      z-index: 1;
+      animation: fadeInRight 1s ease;
+      max-width: 500px;
+      /* Decrease the width of the text box */
+      margin-left: 20px;
+      /* Add space between quotation marks and text */
+    }
+
+    .testimonial-image {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      margin-right: 20px;
+      animation: fadeInLeft 1s ease;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translateX(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes bounce {
+      to {
+        transform: translateY(-5px);
+      }
+    }
+
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 20px 0;
+      padding-bottom: 4em;
+    }
+
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style-type: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: black;
+      text-decoration: none;
+    }
+
+    nav ul li a.btn-border,
+    nav ul li a.btn-filled {
+      border-radius: 30px;
+      padding: 10px 20px;
+      margin-left: 10px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    nav ul li a.btn-border {
+      border: 2px solid black;
+      color: black;
+    }
+
+    nav ul li a.btn-filled {
+      background-color: black;
+      color: white;
+    }
+
+    sec:hover {
+      background-color: #000;
+      color: white;
+      border: white;
+    }
+
+    nav ul li a.btn-border:hover,
+    nav ul li a.btn-filled:hover {
+      background-color: white;
+      border: black;
+      color: black;
+    }
+
+    .container1 {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .container1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div style="background-color: #ffbf00; color: black; width: 100%;" class="container1">
+      <div class="logo">
+        <img src="skillscapeyel.png" height="100em" style="padding-top: 0.5em; padding-left: 2em;">
+      </div>
+      <nav>
+        <ul style="color: #000;">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="">Courses</a></li>
+          <li><a href="../../hack1/freelancer categories.html">Freelancers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About Us</a></li>
+          <li class="lnsn"><a href="../../login.html" class="btn-border">Login</a></li>
+          <li class="lnsn"><a href="../../signup.html" class="btn-filled sec">Signup</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <header>
+    <h1>Courses</h1>
+  </header>
+  <main>
+    <div class="container">
+      <a href="paid.html" class="card paid">
+        <h2>Paid</h2>
+        <p>Unlock premium courses</p>
+      </a>
+      <a href="free.html" class="card free">
+        <h2>Free</h2>
+        <p>Explore free courses</p>
+      </a>
+    </div>
+    <div class="testimonial-heading">
+      <h2>What women who have taken these courses have to say:</h2>
+    </div>
+    <div class="testimonial">
+      <img src="./mom2.jpeg" alt="Woman" class="testimonial-image">
+      <div class="testimonial-text">
+        <i class="fas fa-quote-left quote-icon"></i>
+        <p>
+          Taking the digital marketing course has truly been a game-changer for me. Not only did I acquire valuable
+          skills in social media marketing and SEO, but I also landed a freelancing offer immediately after completing
+          the course. Thanks to the knowledge I gained, I was able to successfully execute the project and make a
+          significant income. I'm incredibly grateful to this platform for providing such impactful learning
+          opportunities.
+        </p>
+        <i class="fas fa-quote-right quote-icon"></i>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

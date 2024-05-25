@@ -1,0 +1,61 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #000;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    padding: 50px;
+  }
+  
+  .courses {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .card {
+    text-align: center;
+    padding: 30px;
+    margin: 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 20px;
+    width: 200px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+  
+  .aim {
+    margin-top: 50px;
+  }
+  
+  .aim h2 {
+    font-size: 36px;
+  }
+  
+  .aim p {
+    font-size: 18px;
+  }
+  

@@ -1,0 +1,87 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #000;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    text-align: center;
+    padding: 50px;
+    margin: 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 20px;
+    width: 300px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .paid {
+    border: 2px solid #fff;
+  }
+  
+  .free {
+    border: 2px solid #fff;
+  }
+  
+  .card h2 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  .card p {
+    font-size: 18px;
+  }
+  
+  /* Add some creative elements */
+  .container {
+    background-image: linear-gradient(to right, #111, #222);
+    padding: 50px;
+    border-radius: 30px;
+  }
+  
+  .card {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Media Query for responsiveness */
+  @media screen and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: 80%;
+    }
+  }
+  
